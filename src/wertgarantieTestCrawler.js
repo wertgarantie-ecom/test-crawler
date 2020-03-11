@@ -21,7 +21,8 @@ const circleCiAPI = `https://circleci.com/api/v1.1/project/${config.vcsType}/${c
 
 const latestBuildNumbers = getLatestBuildNumbers()
     .then(projects => getBuildDataForProjects(projects))
-    .then(builds => console.log(JSON.stringify(builds, null, 2)));
+    .then(projects => addTestMetadataToProjects(projects))
+    .then(projects => console.log(JSON.stringify(projects, null, 2)));
 
 function getLatestBuildNumbers() {
     return Promise.all(config.projects.map(async (project) => {
@@ -46,7 +47,6 @@ function getBuildDataForProjects(projects) {
                 const response = await axios.get(buildNumbersUrl);
                 if (response && response.data && response.data.build_parameters.CIRCLE_JOB === project.testJobName && response.data.branch === 'master') {
                     testBuilds.push({
-                        projectName: response.data.reponame,
                         status: response.data.status,
                         startTime: response.data.start_time,
                         buildNumber: response.data.build_num,
@@ -55,17 +55,44 @@ function getBuildDataForProjects(projects) {
                 }
                 console.log(`received build data for project ${project.projectName} and build ${buildNumber}`);
             }
-            return testBuilds;
+            project.testBuilds = testBuilds;
+            return project;
         }
     ));
 }
 
-function getTestMetadata() {
+async function addTestMetadataToProjects(projects) {
+    await Promise.all(projects.map(async project => {
+        addTestMetadataToProject(project);
+    }));
+    return projects;
+}
 
+
+async function addTestMetadataToProject(project) {
+    await Promise.all(project.testBuilds.map(async testBuild => {
+        await addTestMetadataToTestBuild(project.projectName, testBuild);
+        return testBuild;
+    }));
+    return project;
+}
+
+async function addTestMetadataToTestBuild(projectName, testBuild) {
+    const buildNumbersUrl = `${circleCiAPI}/${projectName}/${testBuild.buildNumber}/tests`;
+    const response = await axios.get(buildNumbersUrl);
+    if (response && response.data) {
+        const allTests = response.data.tests.length;
+        const results = _.countBy(response.data.tests, test => test.result);
+        testBuild.tests = (tests = {
+            results: results,
+            count: allTests
+        });
+        return testBuild;
+    }
 }
 
 function getArtifacts() {
-   
+
 }
 
 //
