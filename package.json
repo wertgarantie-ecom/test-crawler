@@ -1,0 +1,29 @@
+{
+  "name": "test-crawler",
+  "version": "1.0.0",
+  "description": "Crawls Test Results from CircleCi builds and saves them as markdown for confluence include",
+  "main": "wertgarantieTestCrawler.js",
+  "scripts": {
+    "test": "test",
+    "start": "node ./src/wertgarantieTestCrawler.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wertgarantie-ecom/test-crawler.git"
+  },
+  "keywords": [
+    "wertgarantie",
+    "circleci",
+    "testcrawler"
+  ],
+  "author": "henning.nobbe@innoq.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wertgarantie-ecom/test-crawler/issues"
+  },
+  "homepage": "https://github.com/wertgarantie-ecom/test-crawler#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "lodash": "^4.17.15"
+  }
+}
