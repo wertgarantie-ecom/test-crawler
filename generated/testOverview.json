@@ -2,35 +2,35 @@
   {
     "projectName": "bifrost",
     "testJobName": "build",
-      "reports": [
-        {
-          "name": "integrationTests",
-          "path": "reports/html/bifrost-integration.html"
-        },
+    "reports": [
+      {
+        "name": "integrationTests",
+        "path": "reports/html/bifrost-integration.html"
+      },
       {
         "name": "unitTests",
         "path": "reports/html/bifrost-unit.html"
       }
     ],
-    "lastIncludedBuildNumber": 469,
-    "maxIncludedBuildNumber": 469,
+    "lastIncludedBuildNumber": 475,
+    "maxIncludedBuildNumber": 475,
     "testBuilds": [
       {
         "status": "success",
-        "startTime": "2020-03-10T12:59:02.953Z",
-        "buildNumber": 466,
+        "startTime": "2020-03-12T09:04:36.798Z",
+        "buildNumber": 475,
         "commitDetails": [
           {
-            "committer_date": "2020-03-10T12:58:26.000Z",
+            "committer_date": "2020-03-12T09:04:10.000Z",
             "body": "",
             "branch": "master",
-            "author_date": "2020-03-10T12:58:26.000Z",
+            "author_date": "2020-03-12T09:04:10.000Z",
             "committer_email": "arne.landwehr@innoq.com",
-            "commit": "64f025c3af85390f8020eb55c80ae11d536eb76c",
+            "commit": "39b73dd58134d5af9b56c30017dd3f98d3f72750",
             "committer_login": "arnelandwehr",
             "committer_name": "arnel",
-            "subject": "SWDBECOM-188 add test results to build steps",
-            "commit_url": "https://github.com/wertgarantie-ecom/bifrost/commit/64f025c3af85390f8020eb55c80ae11d536eb76c",
+            "subject": "SWDBECOM-188 always use correct jest reports env config",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost/commit/39b73dd58134d5af9b56c30017dd3f98d3f72750",
             "author_login": "arnelandwehr",
             "author_name": "arnel",
             "author_email": "arne.landwehr@innoq.com"
@@ -43,8 +43,14 @@
           "count": 66
         },
         "reports": [
-          null,
-          null
+          {
+            "reportName": "integrationTests",
+            "artifactUrl": "https://475-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-integration.html"
+          },
+          {
+            "reportName": "unitTests",
+            "artifactUrl": "https://475-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-unit.html"
+          }
         ]
       },
       {
@@ -84,6 +90,44 @@
             "artifactUrl": "https://469-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-unit.html"
           }
         ]
+      },
+      {
+        "status": "success",
+        "startTime": "2020-03-10T12:59:02.953Z",
+        "buildNumber": 466,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-10T12:58:26.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-10T12:58:26.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "64f025c3af85390f8020eb55c80ae11d536eb76c",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "SWDBECOM-188 add test results to build steps",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost/commit/64f025c3af85390f8020eb55c80ae11d536eb76c",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 66
+          },
+          "count": 66
+        },
+        "reports": [
+          {
+            "reportName": "integrationTests",
+            "artifactUrl": "-"
+          },
+          {
+            "reportName": "unitTests",
+            "artifactUrl": "-"
+          }
+        ]
       }
     ]
   },
@@ -99,68 +143,6 @@
     "lastIncludedBuildNumber": 639,
     "maxIncludedBuildNumber": 639,
     "testBuilds": [
-      {
-        "status": "success",
-        "startTime": "2020-03-11T08:23:40.806Z",
-        "buildNumber": 631,
-        "commitDetails": [
-          {
-            "committer_date": "2020-03-11T08:22:05.000Z",
-            "body": "",
-            "branch": "master",
-            "author_date": "2020-03-11T08:22:05.000Z",
-            "committer_email": "arne.landwehr@innoq.com",
-            "commit": "8548e4393b169fae92be920b262988da00202234",
-            "committer_login": "arnelandwehr",
-            "committer_name": "arnel",
-            "subject": "SWDBECOM-188 add test output to circleCI builds",
-            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/8548e4393b169fae92be920b262988da00202234",
-            "author_login": "arnelandwehr",
-            "author_name": "arnel",
-            "author_email": "arne.landwehr@innoq.com"
-          }
-        ],
-        "tests": {
-          "results": {
-            "success": 7
-          },
-          "count": 7
-        },
-        "reports": [
-          null
-        ]
-      },
-      {
-        "status": "success",
-        "startTime": "2020-03-11T08:42:58.600Z",
-        "buildNumber": 635,
-        "commitDetails": [
-          {
-            "committer_date": "2020-03-11T08:40:24.000Z",
-            "body": "",
-            "branch": "master",
-            "author_date": "2020-03-11T08:40:24.000Z",
-            "committer_email": "arne.landwehr@innoq.com",
-            "commit": "a846ba0aa0cc39c3725eea1fbb4089601a86adaf",
-            "committer_login": "arnelandwehr",
-            "committer_name": "arnel",
-            "subject": "SWDBECOM-188 add html test reports",
-            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/a846ba0aa0cc39c3725eea1fbb4089601a86adaf",
-            "author_login": "arnelandwehr",
-            "author_name": "arnel",
-            "author_email": "arne.landwehr@innoq.com"
-          }
-        ],
-        "tests": {
-          "results": {
-            "success": 7
-          },
-          "count": 7
-        },
-        "reports": [
-          null
-        ]
-      },
       {
         "status": "success",
         "startTime": "2020-03-11T08:56:08.191Z",
@@ -192,6 +174,74 @@
           {
             "reportName": "uiTests",
             "artifactUrl": "https://639-214986153-gh.circle-artifacts.com/0/reports/report.html"
+          }
+        ]
+      },
+      {
+        "status": "success",
+        "startTime": "2020-03-11T08:42:58.600Z",
+        "buildNumber": 635,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-11T08:40:24.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-11T08:40:24.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "a846ba0aa0cc39c3725eea1fbb4089601a86adaf",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "SWDBECOM-188 add html test reports",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/a846ba0aa0cc39c3725eea1fbb4089601a86adaf",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 7
+          },
+          "count": 7
+        },
+        "reports": [
+          {
+            "reportName": "uiTests",
+            "artifactUrl": "-"
+          }
+        ]
+      },
+      {
+        "status": "success",
+        "startTime": "2020-03-11T08:23:40.806Z",
+        "buildNumber": 631,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-11T08:22:05.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-11T08:22:05.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "8548e4393b169fae92be920b262988da00202234",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "SWDBECOM-188 add test output to circleCI builds",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/8548e4393b169fae92be920b262988da00202234",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 7
+          },
+          "count": 7
+        },
+        "reports": [
+          {
+            "reportName": "uiTests",
+            "artifactUrl": "-"
           }
         ]
       }

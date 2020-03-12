@@ -1,7 +1,7 @@
 const axios = require('axios');
 const _ = require('lodash');
 const fs = require('fs');
-const currentTestOverview = require('./testOverview');
+const currentTestOverview = require('../generated/testOverview');
 const username = 'wertgarantie-ecom';
 const vcsType = 'github';
 
@@ -22,7 +22,9 @@ exports.createTestOverview = function createTestOverview() {
             console.log(JSON.stringify(projects, null, 2));
             return projects;
         })
-        .then(saveToTestOverviewFile);
+        .then(saveToTestOverviewFile)
+        .then(toMarkdown)
+        .then(persistMarkdown);
 };
 
 function getLatestBuildNumbers() {
@@ -45,7 +47,7 @@ async function getBuildDataForProjects(projects) {
             console.log(`requesting build data for project ${project.projectName} and build ${buildNumber}`);
             const response = await axios.get(buildNumbersUrl);
             if (response && response.data && response.data.build_parameters.CIRCLE_JOB === project.testJobName && response.data.branch === 'master') {
-                project.testBuilds.push({
+                project.testBuilds.unshift({
                     status: response.data.status,
                     startTime: response.data.start_time,
                     buildNumber: response.data.build_num,
@@ -67,7 +69,8 @@ async function addTestMetadataToProjects(projects) {
                 return;
             }
             testBuild.tests = metaData;
-            testBuild.reports = await getReportsForTestBuild(project.projectName, project.reports, testBuild);
+            const reports = await getReportsForTestBuild(project.projectName, project.reports, testBuild);
+            testBuild.reports = reports || [];
             return testBuild;
         }));
         return project;
@@ -99,37 +102,47 @@ async function getReportsForTestBuild(projectName, reports, testBuild) {
                     artifactUrl: artifact.url
                 };
             }
+            return {
+                reportName: report.name,
+                artifactUrl: '-'
+            };
         });
     }
 }
 
-function saveToTestOverviewFile(projects) {
-    fs.writeFileSync('src/testOverview.json', JSON.stringify(projects, null, 2));
+async function saveToTestOverviewFile(projects) {
+    await fs.writeFileSync('generated/testOverview.json', JSON.stringify(projects, null, 2));
+    return projects
 }
 
 function testBuildToTableRow(testBuild) {
-    return `|${testBuild.buildNumber}|${testBuild.startTime}|${testBuild.tests.count}|${testBuild.tests.results.success}|${testBuild.tests.results.failure}|${testBuild.reports.map(report => `${report !== null ? report.artifactUrl : ''}|`).join('')}`
+    return `|${testBuild.buildNumber}|${testBuild.startTime}|${testBuild.tests.count}|${testBuild.tests.results.success}|${testBuild.tests.results.failure ? testBuild.tests.results.failure : 0}|${testBuild.reports.map(report => `[${report.artifactUrl}]|`).join('')}`
 }
 
-exports.toMarkdown = function toMarkdown(projects) {
-    return `# Übersicht über unsere Tests
-
+async function toMarkdown(projects) {
+    return `
 Wir haben folgende Projekte die produktiv beim Kunden eingesetzt werden:
 ${projects.map(project => `- ${project.projectName}`).join('\n')}
 
-Jedes dieser Projekte wird automatisch gebaut und deployed, wenn ein neuer Commit auf dem master landet.
+Wir unterscheiden folgende Testarten (nicht jedes Projekt benutzt alle aufgeführten Testarten):
+- Unit Tests:
+    Schnelle Tests zum Testen einer einzelnen Funktionalität ohne gestartete Anwendung oder Kommunikation mit Umsystemen wie Datenbanken
+- Integrations Tests
+    Tests den ganzheitlichen Prozess mit gestarteter Anwendung und Datenbank. Fremdsysteme werden "gemockt" (simuliert).
+- UI-Tests
+    Testen von UI-Komponenten innerhalb eines geöffneten Browsers (aktuell Chrome).
+
+Alle unsere Projekte werden automatisch gebaut, getestet und deployed, sobald ein neuer Commit auf dem master registriert ist.
 Anbei eine Liste aller Builds und Tests für das jeweilige Projekt:
 
 ${projects.map(project => {
-        return `## ${project.projectName} Builds
-    
-    |Build|Start Zeit|Tests|Success|Failures|${project.reports.map(report => `${report.name}|`).join('')}
-    |-|-|-|-|-|${project.reports.map(report => `-|`).join('')}
-    ${project.testBuilds.map(testBuildToTableRow).join('\n')}`;
-    })}
+    return `h2. ${project.projectName} Builds
+||Build||Start Zeit||Tests||Success||Failures||${project.reports.map(report => `${report.name} Report||`).join('')}
+${project.testBuilds.map(testBuildToTableRow).join('\n')}`;
+}).join('\n\n')}
 `;
 };
 
-exports.persistMarkdown = function persistMarkdown(markdown) {
-    fs.writeFileSync('resources/test-overview.md');
+async function persistMarkdown(markdown) {
+    await fs.writeFileSync('generated/test-overview.md', markdown);
 };
