@@ -7,20 +7,23 @@ const vcsType = 'github';
 
 const circleCiAPI = `https://circleci.com/api/v1.1/project/${vcsType}/${username}`;
 
-for (var i = 0; i < currentTestOverview.length; i++) {
-    if (!currentTestOverview[i].lastIncludedBuildNumber) {
-        currentTestOverview[i].lastIncludedBuildNumber = 0;
-    }
-}
 
-getLatestBuildNumbers()
-    .then(getBuildDataForProjects)
-    .then(addTestMetadataToProjects)
-    .then(projects => {
-        console.log(JSON.stringify(projects, null, 2));
-        return projects;
-    })
-    .then(saveToTestOverviewFile);
+exports.createTestOverview = function createTestOverview() {
+    for (var i = 0; i < currentTestOverview.length; i++) {
+        if (!currentTestOverview[i].lastIncludedBuildNumber) {
+            currentTestOverview[i].lastIncludedBuildNumber = 0;
+        }
+    }
+
+    getLatestBuildNumbers()
+        .then(getBuildDataForProjects)
+        .then(addTestMetadataToProjects)
+        .then(projects => {
+            console.log(JSON.stringify(projects, null, 2));
+            return projects;
+        })
+        .then(saveToTestOverviewFile);
+};
 
 function getLatestBuildNumbers() {
     return Promise.all(currentTestOverview.map(async (project) => {
@@ -103,3 +106,33 @@ async function getReportsForTestBuild(projectName, reports, testBuild) {
 function saveToTestOverviewFile(projects) {
     fs.writeFileSync('src/testOverview.json', JSON.stringify(projects, null, 2));
 }
+
+exports.toMarkdown = function toMarkdown(projects) {
+    return `# Übersicht über unsere Tests
+
+Wir haben folgende Projekte die produktiv beim Kunden eingesetzt werden:
+${projects.map(project => `- ${project.projectName}`).join('\n')}
+
+Jedes dieser Projekte wird automatisch gebaut und deployd wenn ein neuer Commit auf dem master landet.
+Anbei eine Liste aller Builds und Tests für das jeweilige Projekt
+
+## Bifrost Builds
+
+
+|Build|Start Zeit|Tests|Success|Failures|Report|
+|-|-|-|-|-|-|-|
+| 638|12:34|33|33|0|http://example.com|
+
+
+
+
+## Bifrost-Components Builds
+
+|Build|Start Zeit|Tests|Success|Failures|Report|
+|-|-|-|-|-|-|-|
+| 638|12:34|33|33|0|http://example.com|`;
+};
+
+exports.persistMarkdown = function persistMarkdown(markdown) {
+    fs.writeFileSync('resources/test-overview.md');
+};
