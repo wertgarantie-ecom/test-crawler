@@ -1,3 +1,6 @@
+# Idea local files
+./.idea/workspace.xml
+
 # Logs
 logs
 *.log
@@ -102,6 +105,3 @@ dist
 
 # TernJS port file
 .tern-port
-
-# Idea local files
-.idea/
