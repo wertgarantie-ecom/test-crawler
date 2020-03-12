@@ -107,30 +107,27 @@ function saveToTestOverviewFile(projects) {
     fs.writeFileSync('src/testOverview.json', JSON.stringify(projects, null, 2));
 }
 
+function testBuildToTableRow(testBuild) {
+    return `|${testBuild.buildNumber}|${testBuild.startTime}|${testBuild.tests.count}|${testBuild.tests.results.success}|${testBuild.tests.results.failure}|${testBuild.reports.map(report => `${report !== null ? report.artifactUrl : ''}|`).join('')}`
+}
+
 exports.toMarkdown = function toMarkdown(projects) {
     return `# Übersicht über unsere Tests
 
 Wir haben folgende Projekte die produktiv beim Kunden eingesetzt werden:
 ${projects.map(project => `- ${project.projectName}`).join('\n')}
 
-Jedes dieser Projekte wird automatisch gebaut und deployd wenn ein neuer Commit auf dem master landet.
-Anbei eine Liste aller Builds und Tests für das jeweilige Projekt
+Jedes dieser Projekte wird automatisch gebaut und deployed, wenn ein neuer Commit auf dem master landet.
+Anbei eine Liste aller Builds und Tests für das jeweilige Projekt:
 
-## Bifrost Builds
-
-
-|Build|Start Zeit|Tests|Success|Failures|Report|
-|-|-|-|-|-|-|-|
-| 638|12:34|33|33|0|http://example.com|
-
-
-
-
-## Bifrost-Components Builds
-
-|Build|Start Zeit|Tests|Success|Failures|Report|
-|-|-|-|-|-|-|-|
-| 638|12:34|33|33|0|http://example.com|`;
+${projects.map(project => {
+        return `## ${project.projectName} Builds
+    
+    |Build|Start Zeit|Tests|Success|Failures|${project.reports.map(report => `${report.name}|`).join('')}
+    |-|-|-|-|-|${project.reports.map(report => `-|`).join('')}
+    ${project.testBuilds.map(testBuildToTableRow).join('\n')}`;
+    })}
+`;
 };
 
 exports.persistMarkdown = function persistMarkdown(markdown) {

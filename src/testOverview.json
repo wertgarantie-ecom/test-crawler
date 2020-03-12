@@ -2,11 +2,11 @@
   {
     "projectName": "bifrost",
     "testJobName": "build",
-    "reports": [
-      {
-        "name": "integrationTests",
-        "path": "reports/html/bifrost-integration.html"
-      },
+      "reports": [
+        {
+          "name": "integrationTests",
+          "path": "reports/html/bifrost-integration.html"
+        },
       {
         "name": "unitTests",
         "path": "reports/html/bifrost-unit.html"
