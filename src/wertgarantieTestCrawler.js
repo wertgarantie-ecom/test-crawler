@@ -58,17 +58,15 @@ async function getBuildDataForProjects(projects) {
 
 async function addTestMetadataToProjects(projects) {
     return await Promise.all(projects.map(async project => {
-        const testBuilds = await Promise.all(project.testBuilds.map(async testBuild => {
+        project.testBuilds = await Promise.all(project.testBuilds.map(async testBuild => {
             const metaData = await getTestMetadataToTestBuild(project.projectName, testBuild);
             if (metaData.count === 0) {
                 return;
             }
             testBuild.tests = metaData;
-            const reports = await getReportsForTestBuild(project.projectName, project.reports, testBuild);
-            testBuild.reports = reports;
+            testBuild.reports = await getReportsForTestBuild(project.projectName, project.reports, testBuild);
             return testBuild;
         }));
-        project.testBuilds = testBuilds;
         return project;
     }));
 }
