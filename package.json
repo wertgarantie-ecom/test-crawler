@@ -5,7 +5,7 @@
   "main": "wertgarantieTestCrawler.js",
   "scripts": {
     "test": "test",
-    "start": "node ./src/wertgarantieTestCrawler.js"
+    "update-reports": "node ./src/app.js && git commit -a -m \"update generated test reports\" && git push"
   },
   "repository": {
     "type": "git",
