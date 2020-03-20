@@ -144,5 +144,6 @@ ${project.testBuilds.map(testBuildToTableRow).join('\n')}`;
 };
 
 async function persistMarkdown(markdown) {
+    console.log(markdown);
     await fs.writeFileSync('generated/test-overview.md', markdown);
 };
