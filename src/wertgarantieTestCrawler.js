@@ -136,14 +136,14 @@ Alle unsere Projekte werden automatisch gebaut, getestet und deployed, sobald ei
 Anbei eine Liste aller Builds und Tests für das jeweilige Projekt:
 
 ${projects.map(project => {
-    return `h2. ${project.projectName} Builds
+        return `h2. ${project.projectName} Builds
 ||Build||Start Zeit||Tests||Success||Failures||${project.reports.map(report => `${report.name} Report||`).join('')}
 ${project.testBuilds.map(testBuildToTableRow).join('\n')}`;
-}).join('\n\n')}
+    }).join('\n\n')}
 `;
-};
+}
 
 async function persistMarkdown(markdown) {
     console.log(markdown);
     await fs.writeFileSync('generated/test-overview.md', markdown);
-};
+}
