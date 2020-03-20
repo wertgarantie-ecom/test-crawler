@@ -445,9 +445,180 @@
         "path": "reports/report.html"
       }
     ],
-    "lastIncludedBuildNumber": 676,
-    "maxIncludedBuildNumber": 676,
+    "lastIncludedBuildNumber": 697,
+    "maxIncludedBuildNumber": 697,
     "testBuilds": [
+      {
+        "status": "success",
+        "startTime": "2020-03-20T08:58:39.091Z",
+        "buildNumber": 697,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-20T08:56:49.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-20T08:56:49.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "9699e353115523433a33020225a2ddcfb32ed163",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "use correct purge call for confirmation component",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/9699e353115523433a33020225a2ddcfb32ed163",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 7
+          },
+          "count": 7
+        },
+        "reports": [
+          {
+            "reportName": "uiTests",
+            "artifactUrl": "https://697-214986153-gh.circle-artifacts.com/0/reports/report.html"
+          }
+        ]
+      },
+      {
+        "status": "success",
+        "startTime": "2020-03-20T08:33:54.891Z",
+        "buildNumber": 692,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-20T08:32:13.000Z",
+            "body": "- wertgarantie-confirmation@2.0.4",
+            "branch": "master",
+            "author_date": "2020-03-20T08:32:13.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "719c4bddc7cd66a05945d5b4750ffe676889da94",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "Publish",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/719c4bddc7cd66a05945d5b4750ffe676889da94",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 7
+          },
+          "count": 7
+        },
+        "reports": [
+          {
+            "reportName": "uiTests",
+            "artifactUrl": "https://692-214986153-gh.circle-artifacts.com/0/reports/report.html"
+          }
+        ]
+      },
+      {
+        "status": "success",
+        "startTime": "2020-03-20T08:29:26.667Z",
+        "buildNumber": 687,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-20T08:27:54.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-20T08:27:54.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "cdebcb6c2ad36c7ea090a7e947311c53263b120e",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "remove unused variable in confirmation.js",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/cdebcb6c2ad36c7ea090a7e947311c53263b120e",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 7
+          },
+          "count": 7
+        },
+        "reports": [
+          {
+            "reportName": "uiTests",
+            "artifactUrl": "https://687-214986153-gh.circle-artifacts.com/0/reports/report.html"
+          }
+        ]
+      },
+      {
+        "status": "success",
+        "startTime": "2020-03-20T08:03:18.291Z",
+        "buildNumber": 682,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-20T07:53:16.000Z",
+            "body": "- wertgarantie-after-sales@1.0.5\n - wertgarantie-selection-popup@2.0.5",
+            "branch": "master",
+            "author_date": "2020-03-20T07:53:16.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "4b98363d8e3fa0a5528cc1e3957b725f88e14fb7",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "Publish",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/4b98363d8e3fa0a5528cc1e3957b725f88e14fb7",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 7
+          },
+          "count": 7
+        },
+        "reports": [
+          {
+            "reportName": "uiTests",
+            "artifactUrl": "https://682-214986153-gh.circle-artifacts.com/0/reports/report.html"
+          }
+        ]
+      },
+      {
+        "status": "failed",
+        "startTime": "2020-03-20T07:57:36.547Z",
+        "buildNumber": 681,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-20T07:53:16.000Z",
+            "body": "- wertgarantie-after-sales@1.0.5\n - wertgarantie-selection-popup@2.0.5",
+            "branch": "master",
+            "author_date": "2020-03-20T07:53:16.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "4b98363d8e3fa0a5528cc1e3957b725f88e14fb7",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "Publish",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/4b98363d8e3fa0a5528cc1e3957b725f88e14fb7",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 6,
+            "failure": 1
+          },
+          "count": 7
+        },
+        "reports": [
+          {
+            "reportName": "uiTests",
+            "artifactUrl": "https://681-214986153-gh.circle-artifacts.com/0/reports/report.html"
+          }
+        ]
+      },
       {
         "status": "success",
         "startTime": "2020-03-19T13:21:12.390Z",

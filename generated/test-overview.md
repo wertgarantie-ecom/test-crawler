@@ -28,6 +28,11 @@ h2. bifrost Builds
 
 h2. bifrost-components Builds
 ||Build||Start Zeit||Tests||Success||Failures||uiTests Report||
+|697|2020-03-20T08:58:39.091Z|7|7|0|[https://697-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|692|2020-03-20T08:33:54.891Z|7|7|0|[https://692-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|687|2020-03-20T08:29:26.667Z|7|7|0|[https://687-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|682|2020-03-20T08:03:18.291Z|7|7|0|[https://682-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|681|2020-03-20T07:57:36.547Z|7|6|1|[https://681-214986153-gh.circle-artifacts.com/0/reports/report.html]|
 |676|2020-03-19T13:21:12.390Z|7|7|0|[https://676-214986153-gh.circle-artifacts.com/0/reports/report.html]|
 |671|2020-03-19T13:17:25.480Z|7|7|0|[https://671-214986153-gh.circle-artifacts.com/0/reports/report.html]|
 |659|2020-03-16T18:32:12.330Z|7|7|0|[https://659-214986153-gh.circle-artifacts.com/0/reports/report.html]|
