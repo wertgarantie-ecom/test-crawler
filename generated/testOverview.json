@@ -12,9 +12,191 @@
         "path": "reports/html/bifrost-unit.html"
       }
     ],
-    "lastIncludedBuildNumber": 496,
-    "maxIncludedBuildNumber": 496,
+    "lastIncludedBuildNumber": 518,
+    "maxIncludedBuildNumber": 518,
     "testBuilds": [
+      {
+        "status": "success",
+        "startTime": "2020-03-26T12:04:27.976Z",
+        "buildNumber": 518,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-26T12:03:56.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-26T12:03:56.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "79a26b9acf1047ae22962cece2c6561457866d85",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "SWDBECOM-208 add webservices postman collection",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost/commit/79a26b9acf1047ae22962cece2c6561457866d85",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 69
+          },
+          "count": 69
+        },
+        "reports": [
+          {
+            "reportName": "integrationTests",
+            "artifactUrl": "https://518-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-integration.html"
+          },
+          {
+            "reportName": "unitTests",
+            "artifactUrl": "https://518-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-unit.html"
+          }
+        ]
+      },
+      {
+        "status": "success",
+        "startTime": "2020-03-25T07:08:59.290Z",
+        "buildNumber": 512,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-25T07:08:34.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-25T07:08:34.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "b0c4533f7320df982f3d16148a22ee2768f04dbf",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "SWDBECOM-173 remove Joi validation",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost/commit/b0c4533f7320df982f3d16148a22ee2768f04dbf",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 69
+          },
+          "count": 69
+        },
+        "reports": [
+          {
+            "reportName": "integrationTests",
+            "artifactUrl": "https://512-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-integration.html"
+          },
+          {
+            "reportName": "unitTests",
+            "artifactUrl": "https://512-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-unit.html"
+          }
+        ]
+      },
+      {
+        "status": "success",
+        "startTime": "2020-03-24T10:41:34.497Z",
+        "buildNumber": 509,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-24T10:41:11.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-24T10:41:11.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "431d2f24e45fd617698d502addc4802c9dc79984",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "SWDBECOM-202 fix security vulnerabilies",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost/commit/431d2f24e45fd617698d502addc4802c9dc79984",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 73
+          },
+          "count": 73
+        },
+        "reports": [
+          {
+            "reportName": "integrationTests",
+            "artifactUrl": "https://509-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-integration.html"
+          },
+          {
+            "reportName": "unitTests",
+            "artifactUrl": "https://509-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-unit.html"
+          }
+        ]
+      },
+      {
+        "status": "success",
+        "startTime": "2020-03-24T09:26:51.835Z",
+        "buildNumber": 506,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-24T08:28:13.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-24T08:28:13.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "6b3ab683d5a246c083fc9db352cc9477b413469b",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "SWDBECOM-201 add schema validation",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost/commit/6b3ab683d5a246c083fc9db352cc9477b413469b",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          },
+          {
+            "committer_date": "2020-03-24T09:24:08.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-24T09:24:08.000Z",
+            "committer_email": "henning.nobbe@innoq.com",
+            "commit": "dba5b984a294c858ace6bf6190b87c07ec625e2e",
+            "committer_login": null,
+            "committer_name": "henning",
+            "subject": "SWDBECOM-201 add pop up controller unit test",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost/commit/dba5b984a294c858ace6bf6190b87c07ec625e2e",
+            "author_login": null,
+            "author_name": "henning",
+            "author_email": "henning.nobbe@innoq.com"
+          },
+          {
+            "committer_date": "2020-03-24T09:26:41.000Z",
+            "body": "Swdbecom 201 only return complete product data",
+            "branch": "master",
+            "author_date": "2020-03-24T09:26:41.000Z",
+            "committer_email": "noreply@github.com",
+            "commit": "6e50053cab7eab83deb5d090fea9f8cd8d8d7572",
+            "committer_login": "web-flow",
+            "committer_name": "GitHub",
+            "subject": "Merge pull request #15 from wertgarantie-ecom/SWDBECOM-201_only_return_complete_product_data",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost/commit/6e50053cab7eab83deb5d090fea9f8cd8d8d7572",
+            "author_login": "Ginbob",
+            "author_name": "Henning Nobbe",
+            "author_email": "henning.nobbe@gmail.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 73
+          },
+          "count": 73
+        },
+        "reports": [
+          {
+            "reportName": "integrationTests",
+            "artifactUrl": "https://506-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-integration.html"
+          },
+          {
+            "reportName": "unitTests",
+            "artifactUrl": "https://506-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-unit.html"
+          }
+        ]
+      },
       {
         "status": "success",
         "startTime": "2020-03-13T10:32:41.981Z",
@@ -445,9 +627,490 @@
         "path": "reports/report.html"
       }
     ],
-    "lastIncludedBuildNumber": 697,
-    "maxIncludedBuildNumber": 697,
+    "lastIncludedBuildNumber": 748,
+    "maxIncludedBuildNumber": 748,
     "testBuilds": [
+      {
+        "status": "success",
+        "startTime": "2020-03-26T12:12:30.328Z",
+        "buildNumber": 748,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-26T12:10:44.000Z",
+            "body": "- wertgarantie-rating@2.0.2\n - wertgarantie-selection-popup@2.0.10",
+            "branch": "master",
+            "author_date": "2020-03-26T12:10:44.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "d8ee11404be0d1d6830ac667e9f913d8edc3634f",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "Publish",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/d8ee11404be0d1d6830ac667e9f913d8edc3634f",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 7
+          },
+          "count": 7
+        },
+        "reports": [
+          {
+            "reportName": "uiTests",
+            "artifactUrl": "https://748-214986153-gh.circle-artifacts.com/0/reports/report.html"
+          }
+        ]
+      },
+      {
+        "status": "success",
+        "startTime": "2020-03-25T15:46:19.508Z",
+        "buildNumber": 742,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-25T15:42:49.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-25T15:42:49.000Z",
+            "committer_email": "henning.nobbe@innoq.com",
+            "commit": "8b0f9157bdaa8de642f7e3a42056030eadab7f58",
+            "committer_login": null,
+            "committer_name": "henning",
+            "subject": "SWDBECOM-204 remove unordered lists and handle lists as div + some beautifying refactorings",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/8b0f9157bdaa8de642f7e3a42056030eadab7f58",
+            "author_login": null,
+            "author_name": "henning",
+            "author_email": "henning.nobbe@innoq.com"
+          },
+          {
+            "committer_date": "2020-03-25T15:45:01.000Z",
+            "body": "SWDBECOM-204 remove unordered lists from selection pop up and handle lists as div",
+            "branch": "master",
+            "author_date": "2020-03-25T15:45:01.000Z",
+            "committer_email": "noreply@github.com",
+            "commit": "62c4114fd2c3cd1cef7894d48dba65c6f18f7a8b",
+            "committer_login": "web-flow",
+            "committer_name": "GitHub",
+            "subject": "Merge pull request #13 from wertgarantie-ecom/SWDBECOM-204_replace_unordered_lists",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/62c4114fd2c3cd1cef7894d48dba65c6f18f7a8b",
+            "author_login": "Ginbob",
+            "author_name": "Henning Nobbe",
+            "author_email": "henning.nobbe@gmail.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 7
+          },
+          "count": 7
+        },
+        "reports": [
+          {
+            "reportName": "uiTests",
+            "artifactUrl": "https://742-214986153-gh.circle-artifacts.com/0/reports/report.html"
+          }
+        ]
+      },
+      {
+        "status": "success",
+        "startTime": "2020-03-25T11:51:13.722Z",
+        "buildNumber": 737,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-25T11:49:24.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-25T11:49:24.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "77205887114a0597377e7dceb97b92e858155308",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "SWDBECOM-199 add valid entrypoint",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/77205887114a0597377e7dceb97b92e858155308",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 7
+          },
+          "count": 7
+        },
+        "reports": [
+          {
+            "reportName": "uiTests",
+            "artifactUrl": "https://737-214986153-gh.circle-artifacts.com/0/reports/report.html"
+          }
+        ]
+      },
+      {
+        "status": "success",
+        "startTime": "2020-03-25T09:57:31.238Z",
+        "buildNumber": 732,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-25T09:55:02.000Z",
+            "body": "- wertgarantie-after-sales@1.0.6\n - wertgarantie-confirmation@2.0.5\n - wertgarantie-selection-popup@2.0.9",
+            "branch": "master",
+            "author_date": "2020-03-25T09:55:02.000Z",
+            "committer_email": "henning.nobbe@innoq.com",
+            "commit": "c65de9fea5496e7b431c90e730f1c862099db77b",
+            "committer_login": null,
+            "committer_name": "henning",
+            "subject": "Publish",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/c65de9fea5496e7b431c90e730f1c862099db77b",
+            "author_login": null,
+            "author_name": "henning",
+            "author_email": "henning.nobbe@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 7
+          },
+          "count": 7
+        },
+        "reports": [
+          {
+            "reportName": "uiTests",
+            "artifactUrl": "https://732-214986153-gh.circle-artifacts.com/0/reports/report.html"
+          }
+        ]
+      },
+      {
+        "status": "success",
+        "startTime": "2020-03-25T09:55:37.942Z",
+        "buildNumber": 728,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-12T10:50:08.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-12T10:50:08.000Z",
+            "committer_email": "henning.nobbe@innoq.com",
+            "commit": "43366fad6d2692d8ddbd892256eb558f255cc1fa",
+            "committer_login": null,
+            "committer_name": "henning",
+            "subject": "SWDBECOM-174 further tries",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/43366fad6d2692d8ddbd892256eb558f255cc1fa",
+            "author_login": null,
+            "author_name": "henning",
+            "author_email": "henning.nobbe@innoq.com"
+          },
+          {
+            "committer_date": "2020-03-24T12:02:14.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-24T12:02:14.000Z",
+            "committer_email": "henning.nobbe@innoq.com",
+            "commit": "ae002399850109eabaf95daed868707841cd095b",
+            "committer_login": null,
+            "committer_name": "henning",
+            "subject": "SWDBECOM-174 further tries",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/ae002399850109eabaf95daed868707841cd095b",
+            "author_login": null,
+            "author_name": "henning",
+            "author_email": "henning.nobbe@innoq.com"
+          },
+          {
+            "committer_date": "2020-03-24T13:47:47.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-24T13:47:47.000Z",
+            "committer_email": "henning.nobbe@innoq.com",
+            "commit": "2a03d0ca8682ecd424a13dff0a1d6448db60d500",
+            "committer_login": null,
+            "committer_name": "henning",
+            "subject": "SWDBECOM-174 remove font awesome dependency",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/2a03d0ca8682ecd424a13dff0a1d6448db60d500",
+            "author_login": null,
+            "author_name": "henning",
+            "author_email": "henning.nobbe@innoq.com"
+          },
+          {
+            "committer_date": "2020-03-24T16:36:45.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-24T16:36:45.000Z",
+            "committer_email": "henning.nobbe@innoq.com",
+            "commit": "66687026d5e0865a6c163b4c3893a284bde47e26",
+            "committer_login": null,
+            "committer_name": "henning",
+            "subject": "SWDBECOM-174 Selection Haken auf svg umgestellt, after sales test page mit Kaufdaten angelegt",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/66687026d5e0865a6c163b4c3893a284bde47e26",
+            "author_login": null,
+            "author_name": "henning",
+            "author_email": "henning.nobbe@innoq.com"
+          },
+          {
+            "committer_date": "2020-03-24T16:39:50.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-24T16:39:50.000Z",
+            "committer_email": "henning.nobbe@innoq.com",
+            "commit": "93b5139d910605992c8796c3ba49e688df7918ee",
+            "committer_login": null,
+            "committer_name": "henning",
+            "subject": "SWDBECOM-174 resolve merge conflicts",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/93b5139d910605992c8796c3ba49e688df7918ee",
+            "author_login": null,
+            "author_name": "henning",
+            "author_email": "henning.nobbe@innoq.com"
+          },
+          {
+            "committer_date": "2020-03-25T09:52:30.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-25T09:52:30.000Z",
+            "committer_email": "henning.nobbe@innoq.com",
+            "commit": "20d86d33f1083edda2e66c66475510568ec4576a",
+            "committer_login": null,
+            "committer_name": "henning",
+            "subject": "SWDBECOM-174 remove font awesome css link includes + font awesome license include",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/20d86d33f1083edda2e66c66475510568ec4576a",
+            "author_login": null,
+            "author_name": "henning",
+            "author_email": "henning.nobbe@innoq.com"
+          },
+          {
+            "committer_date": "2020-03-25T09:54:19.000Z",
+            "body": "Swdbecom 174 include fontawesome in components",
+            "branch": "master",
+            "author_date": "2020-03-25T09:54:19.000Z",
+            "committer_email": "noreply@github.com",
+            "commit": "5ced7e8bc3c1abef229a211d961c9c7c56c9ad40",
+            "committer_login": "web-flow",
+            "committer_name": "GitHub",
+            "subject": "Merge pull request #12 from wertgarantie-ecom/SWDBECOM-174_include_fontawesome_in_components",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/5ced7e8bc3c1abef229a211d961c9c7c56c9ad40",
+            "author_login": "Ginbob",
+            "author_name": "Henning Nobbe",
+            "author_email": "henning.nobbe@gmail.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 7
+          },
+          "count": 7
+        },
+        "reports": [
+          {
+            "reportName": "uiTests",
+            "artifactUrl": "https://728-214986153-gh.circle-artifacts.com/0/reports/report.html"
+          }
+        ]
+      },
+      {
+        "status": "success",
+        "startTime": "2020-03-25T08:08:18.039Z",
+        "buildNumber": 718,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-25T08:05:38.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-25T08:05:38.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "f03de83efe2ebb3ef172e9a086968b53bb116701",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "SWDBECOM-73 only display selection popup for quantity == 1",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/f03de83efe2ebb3ef172e9a086968b53bb116701",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 7
+          },
+          "count": 7
+        },
+        "reports": [
+          {
+            "reportName": "uiTests",
+            "artifactUrl": "https://718-214986153-gh.circle-artifacts.com/0/reports/report.html"
+          }
+        ]
+      },
+      {
+        "status": "success",
+        "startTime": "2020-03-25T08:08:17.911Z",
+        "buildNumber": 717,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-25T08:06:31.000Z",
+            "body": "- wertgarantie-selection-popup@2.0.8",
+            "branch": "master",
+            "author_date": "2020-03-25T08:06:31.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "8e1d62ca2de2c9a18100a45fb424e6e821a20fa8",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "Publish",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/8e1d62ca2de2c9a18100a45fb424e6e821a20fa8",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 7
+          },
+          "count": 7
+        },
+        "reports": [
+          {
+            "reportName": "uiTests",
+            "artifactUrl": "https://717-214986153-gh.circle-artifacts.com/0/reports/report.html"
+          }
+        ]
+      },
+      {
+        "status": "success",
+        "startTime": "2020-03-24T10:17:46.388Z",
+        "buildNumber": 707,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-24T10:16:07.000Z",
+            "body": "- wertgarantie-selection-popup@2.0.7",
+            "branch": "master",
+            "author_date": "2020-03-24T10:16:07.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "456fb01ddeb4a1bc4e3202b083b106cf9c0dde48",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "Publish",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/456fb01ddeb4a1bc4e3202b083b106cf9c0dde48",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 7
+          },
+          "count": 7
+        },
+        "reports": [
+          {
+            "reportName": "uiTests",
+            "artifactUrl": "https://707-214986153-gh.circle-artifacts.com/0/reports/report.html"
+          }
+        ]
+      },
+      {
+        "status": "success",
+        "startTime": "2020-03-24T10:17:47.167Z",
+        "buildNumber": 706,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-24T10:15:32.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-24T10:15:32.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "c91b781b62afbedc73033301606b1347e38d0894",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "SWDBECOM-201 fix failing tests",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/c91b781b62afbedc73033301606b1347e38d0894",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 7
+          },
+          "count": 7
+        },
+        "reports": [
+          {
+            "reportName": "uiTests",
+            "artifactUrl": "https://706-214986153-gh.circle-artifacts.com/0/reports/report.html"
+          }
+        ]
+      },
+      {
+        "status": "failed",
+        "startTime": "2020-03-24T09:57:53.923Z",
+        "buildNumber": 703,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-24T09:56:04.000Z",
+            "body": "- wertgarantie-selection-popup@2.0.6",
+            "branch": "master",
+            "author_date": "2020-03-24T09:56:04.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "3ddc421f9a79636e77460d38e0d589bd06ef6c1c",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "Publish",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/3ddc421f9a79636e77460d38e0d589bd06ef6c1c",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 4,
+            "failure": 3
+          },
+          "count": 7
+        },
+        "reports": [
+          {
+            "reportName": "uiTests",
+            "artifactUrl": "https://703-214986153-gh.circle-artifacts.com/0/reports/report.html"
+          }
+        ]
+      },
+      {
+        "status": "failed",
+        "startTime": "2020-03-24T09:56:58.921Z",
+        "buildNumber": 702,
+        "commitDetails": [
+          {
+            "committer_date": "2020-03-24T09:55:19.000Z",
+            "body": "",
+            "branch": "master",
+            "author_date": "2020-03-24T09:55:19.000Z",
+            "committer_email": "arne.landwehr@innoq.com",
+            "commit": "b8a64433fc1b3bdad6e22e61ba0ebe9337ede4da",
+            "committer_login": "arnelandwehr",
+            "committer_name": "arnel",
+            "subject": "SWDBECOM-201 adjust to new productSelection error response",
+            "commit_url": "https://github.com/wertgarantie-ecom/bifrost-components/commit/b8a64433fc1b3bdad6e22e61ba0ebe9337ede4da",
+            "author_login": "arnelandwehr",
+            "author_name": "arnel",
+            "author_email": "arne.landwehr@innoq.com"
+          }
+        ],
+        "tests": {
+          "results": {
+            "success": 4,
+            "failure": 3
+          },
+          "count": 7
+        },
+        "reports": [
+          {
+            "reportName": "uiTests",
+            "artifactUrl": "https://702-214986153-gh.circle-artifacts.com/0/reports/report.html"
+          }
+        ]
+      },
       {
         "status": "success",
         "startTime": "2020-03-20T08:58:39.091Z",
