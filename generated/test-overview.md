@@ -16,6 +16,11 @@ Anbei eine Liste aller Builds und Tests für das jeweilige Projekt:
 
 h2. bifrost Builds
 ||Build||Start Zeit||Tests||Success||Failures||integrationTests Report||unitTests Report||
+|542|2020-04-01T07:21:44.980Z|69|69|0|[https://542-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-integration.html]|[https://542-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-unit.html]|
+|539|2020-04-01T07:13:13.939Z|69|69|0|[https://539-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-integration.html]|[https://539-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-unit.html]|
+|535|2020-03-31T09:53:09.401Z|69|69|0|[https://535-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-integration.html]|[https://535-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-unit.html]|
+|530|2020-03-30T09:57:49.785Z|69|69|0|[https://530-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-integration.html]|[https://530-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-unit.html]|
+|527|2020-03-29T13:14:59.594Z|69|69|0|[https://527-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-integration.html]|[https://527-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-unit.html]|
 |518|2020-03-26T12:04:27.976Z|69|69|0|[https://518-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-integration.html]|[https://518-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-unit.html]|
 |512|2020-03-25T07:08:59.290Z|69|69|0|[https://512-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-integration.html]|[https://512-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-unit.html]|
 |509|2020-03-24T10:41:34.497Z|73|73|0|[https://509-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-integration.html]|[https://509-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-unit.html]|
@@ -32,6 +37,21 @@ h2. bifrost Builds
 
 h2. bifrost-components Builds
 ||Build||Start Zeit||Tests||Success||Failures||uiTests Report||
+|829|2020-04-01T12:19:03.449Z|7|7|0|[https://829-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|828|2020-04-01T12:17:27.232Z|7|3|0|[https://828-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|820|2020-04-01T11:32:50.564Z|7|7|0|[https://820-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|819|2020-04-01T11:32:31.067Z|7|7|0|[https://819-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|813|2020-04-01T10:10:55.402Z|7|7|0|[https://813-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|808|2020-04-01T09:09:45.603Z|7|7|0|[https://808-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|800|2020-03-31T12:49:53.646Z|7|7|0|[https://800-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|799|2020-03-31T12:49:21.916Z|7|7|0|[https://799-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|792|2020-03-31T12:03:03.987Z|7|7|0|[https://792-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|787|2020-03-31T11:14:51.240Z|7|7|0|[https://787-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|782|2020-03-31T09:55:49.146Z|7|7|0|[https://782-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|776|2020-03-30T20:47:58.869Z|7|7|0|[https://776-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|771|2020-03-30T20:42:28.511Z|7|7|0|[https://771-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|765|2020-03-30T17:51:49.001Z|7|7|0|[https://765-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|760|2020-03-29T13:45:40.637Z|7|7|0|[https://760-214986153-gh.circle-artifacts.com/0/reports/report.html]|
 |748|2020-03-26T12:12:30.328Z|7|7|0|[https://748-214986153-gh.circle-artifacts.com/0/reports/report.html]|
 |742|2020-03-25T15:46:19.508Z|7|7|0|[https://742-214986153-gh.circle-artifacts.com/0/reports/report.html]|
 |737|2020-03-25T11:51:13.722Z|7|7|0|[https://737-214986153-gh.circle-artifacts.com/0/reports/report.html]|
