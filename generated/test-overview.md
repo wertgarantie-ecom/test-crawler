@@ -16,6 +16,7 @@ Anbei eine Liste aller Builds und Tests für das jeweilige Projekt:
 
 h2. bifrost Builds
 ||Build||Start Zeit||Tests||Success||Failures||integrationTests Report||unitTests Report||
+|588|2020-04-07T09:05:59.089Z|85|85|0|[https://588-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-integration.html]|[https://588-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-unit.html]|
 |570|2020-04-03T11:34:33.451Z|69|69|0|[https://570-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-integration.html]|[https://570-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-unit.html]|
 |567|2020-04-03T11:27:54.997Z|69|69|0|[https://567-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-integration.html]|[https://567-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-unit.html]|
 |559|2020-04-03T06:33:00.380Z|69|69|0|[https://559-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-integration.html]|[https://559-215040663-gh.circle-artifacts.com/0/reports/html/bifrost-unit.html]|
@@ -42,6 +43,10 @@ h2. bifrost Builds
 
 h2. bifrost-components Builds
 ||Build||Start Zeit||Tests||Success||Failures||uiTests Report||
+|883|2020-04-06T16:48:32.726Z|7|7|0|[https://883-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|878|2020-04-06T16:32:37.773Z|7|7|0|[https://878-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|876|2020-04-06T16:29:33.571Z|7|3|0|[https://876-214986153-gh.circle-artifacts.com/0/reports/report.html]|
+|874|2020-04-06T16:24:06.278Z|7|4|3|[https://874-214986153-gh.circle-artifacts.com/0/reports/report.html]|
 |869|2020-04-03T10:41:47.019Z|7|7|0|[https://869-214986153-gh.circle-artifacts.com/0/reports/report.html]|
 |864|2020-04-03T10:28:03.445Z|7|7|0|[https://864-214986153-gh.circle-artifacts.com/0/reports/report.html]|
 |859|2020-04-02T10:32:52.188Z|7|7|0|[https://859-214986153-gh.circle-artifacts.com/0/reports/report.html]|
